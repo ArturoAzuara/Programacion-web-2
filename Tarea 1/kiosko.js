@@ -17,7 +17,7 @@ function mostrarMenu() {
 4) Agua de Jamaica ............ $15
 5) Torta de jamón ............. $25
 
-Escribe "codigo,cantidad" (por ejemplo 3,4). Escribe "fin" para cobrar.
+Escribe "codigo,cantidad" (por ejemplo 1,2). Escribe "fin" para cobrar.
 `);
 }
 
