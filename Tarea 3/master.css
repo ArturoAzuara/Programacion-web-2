@@ -1,0 +1,35 @@
+<style>
+body {
+    background-color: #eaeaea; /* fondo general */
+}
+.calculator-box {
+    background-color: #0057a3; /* cuadro azul */
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 600px;
+}
+.input-box {
+    background: white;
+    text-align: center;
+    font-size: 2rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+.btn-op {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+#suma { background: green; }
+#resta { background: orangered; }
+#producto { background: purple; }
+#result {
+    background: white;
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+</style>
