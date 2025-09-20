@@ -1,0 +1,56 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.numero {
+    background-color: aqua;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #64588d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: grab;
+}
+
+.dropzone {
+    width: calc(5*60px + 4*15px);
+    height: 100px;
+    margin: 30px auto 0 auto;
+    border: 2px dashed #64588d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E90FF; /* azul */
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.correcto {
+    animation: acierto 1s forwards;
+}
+
+.error {
+    animation: fallo 1s forwards;
+}
+
+@keyframes acierto {
+    0% {background-color: #1E90FF; transform: scale(1);}
+    50% {background-color: green; transform: scale(1.2);}
+    100% {background-color: #1E90FF; transform: scale(1);}
+}
+
+@keyframes fallo {
+    0% {background-color: #1E90FF; transform: rotate(0deg);}
+    25% {background-color: red; transform: rotate(-10deg);}
+    50% {background-color: #1E90FF; transform: rotate(10deg);}
+    75% {background-color: red; transform: rotate(-10deg);}
+    100% {background-color: #1E90FF; transform: rotate(0deg);}
+}
